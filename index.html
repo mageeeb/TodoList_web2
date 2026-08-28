@@ -7,6 +7,30 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  
+	  <main class="container">
+		  <h1> Ma Todo List </h1>
+		  <form id=todoForm>
+		<input
+			  type="text"
+			  id="todoInput"
+			  placeholder="Ajouter une tâche..."
+			  autocomplete="off"
+			  >
+			  <button type="submit"> Ajouter</button>
+		  </form> <p id="message"></p>
+		  <ul id=todoList></ul>
+
+		<div class="footer"> 
+			<p><span id="count">0</span>tâche(s) restante(s)</p>
+
+		<div class="filters">
+			<button class="filter active" data-filter="all"> Toutes </button>
+			<button class="filter" data-filter="todo"> A faire </button>
+			<button class="filter" data-filter="done"> Terminées </button>
+    </div>
+              
+	  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+                                                                                                            
   </body>
 </html>
