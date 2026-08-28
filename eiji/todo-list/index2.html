@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+	  <main class="container">
+		  <h1>Ma Todo List</h1>
+		  <form id="todoForm">
+			  <input type="text" id="todoInput" placeholder="Ajouter une tâche.." autocomplet="off">
+				<button class="btn" type="submit">Ajouter</button>
+		  </from>
+
+		  <p id="message"></p>
+
+			<ul id="todoList">
+			</ul>
+			<div class="footer">
+				<p>
+				<span id="count">0</span>
+				tâche(s) restante(s)
+				</p>
+
+				<div class="filter">
+					<button class="filter active" data-filter="all"></button>
+					<button class="filter" data-filter="todo"></button>
+					<button class="filter" data-filter="done"></button>
+				</div>
+			</div>
+	  </main>
+  </body>
+</html>
