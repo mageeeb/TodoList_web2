@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid mt-3 ">
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				<div class="filters col">
+					<button class="btn btn-primary filter active" data-filter="all">Toutes</button>
+					<button class="btn btn-primary filter" data-filter="todo">A faire</button>
+					<button class="btn btn-primary filter" data-filter="done">Terminées</button>
+				</div>
+			</div>
+			<h1 class="col text-center">Ma Todo List</h1>
+			<div class ="col text-end">
+				<!-- conteur de nombre de tache -->
+				<p> <span id="count"> 0 </span> tache(s)restante(s) </p>
+			</div>
+		</div>
+	</nav>
+	<main class="container-fluid mt-5">
+		<form id="todoForm">
+			<input class ="rounded-5"type="text" id="todoInput" placeholder="Ajouter une tache a faire ..." autocomplete="off">
+			<button type="submit">Ajouter</button>
+		</form>
+		<p id="message"></p>
+		<ul id="todoList list-group">
+			<li class="list-group-item">
+				<input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+				<label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+			</li>
+		</ul>
+
+	</main>
+	<script src="./js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
